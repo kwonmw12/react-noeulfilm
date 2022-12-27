@@ -25,13 +25,11 @@ const Worksswiper = () => {
           {
             swiperinfo.map( ( item, index ) => {
                    return(
-                    <SwiperSlide className={item.cls} key={'sw'+index} style={{ background : item.bg }}>{item.worktitle}</SwiperSlide>
+                    <SwiperSlide className={item.cls} key={'sw'+index} style={{ backgroundImage : item.bg}}>{item.worktitle}</SwiperSlide>
                    )
               }
             )
-            
           }
-             
         </Swiper>
       )
   }

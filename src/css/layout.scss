@@ -19,7 +19,7 @@ li{
     h1{
         max-width:9.5rem;
         svg{
-            height:4.8rem;
+            height:3rem;
             
             transform-origin: center;
             transition: 0.5s;
@@ -104,19 +104,20 @@ li{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
              }
              .react{
-                background:url(https://img.cjthemarket.com/images/file/display/586/20221122103138241.jpg?RS=1920x500) no-repeat center;
-                background-size: cover;
-                color:white;
+                // background:url(https://img.cjthemarket.com/images/file/display/586/20221122103138241.jpg?RS=1920x500) no-repeat center;
+                // background-size: cover;
+                // color:white;
                 @media (max-width:768px) {
                     background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
                     
                 }
              }
-             .boot{
-
-             }
+             
         }
         .swiper-scrollbar-horizontal{
             height: 2px;
