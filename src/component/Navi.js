@@ -9,7 +9,7 @@ function Navi(props){
         {
           naviDb.map((item, index) =>{
             return(
-              <li id={ 'naivID'+index } key={ 'naivID'+index } ><a href={item.naviLink} className="text-decoration-none ps-md-3 pe-md-0 px-3">{item.naviText}</a></li>
+              <li id={ 'naivID'+index } key={ 'naivID'+index } ><a href={item.naviLink} className="text-decoration-none ps-md-3 pe-md-5">{item.naviText}</a></li>
             )
           }
           )

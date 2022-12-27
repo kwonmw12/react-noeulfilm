@@ -1,14 +1,22 @@
 { "naviDB" : 
 [{
-    "naviText" : "포트폴리오",
-    "naviLink" : "#portfolio"
+    "naviText" : "HOME",
+    "naviLink" : "#mainswiper"
   },
   {
-    "naviText" : "인물탐방",
+    "naviText" : "BEST PHOTO",
     "naviLink" : "#me"
                   },
   {
-    "naviText" : "사전인터뷰 및 제안",
+    "naviText" : "GALLERY",
+    "naviLink" : "#preInterview"
+                  },
+                  {
+    "naviText" : "MD PICK",
+    "naviLink" : "#preInterview"
+                  },
+  {
+    "naviText" : "RESERVATION",
     "naviLink" : "#preInterview"
                   }
   ]

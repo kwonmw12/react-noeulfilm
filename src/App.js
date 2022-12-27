@@ -13,8 +13,9 @@ function App() {
   return (
     <div className="App" id="top">
       <Header></Header>
-      <Worksswiper></Worksswiper>      
-      <Preinterview contentid="me" objnm="noticeObj"  title="공지사항"></Preinterview>
+      <Worksswiper contentid="mainswiper"></Worksswiper>  
+      <Worksswiper contentid="subswiper"></Worksswiper>    
+      <Preinterview contentid="me" objnm="noticeObj"  title="아닐껄아마도?"></Preinterview>
       <Preinterview contentid="preInterview" objnm="preinterview" title="사전인터뷰"></Preinterview>
       <Footer></Footer>
     </div>

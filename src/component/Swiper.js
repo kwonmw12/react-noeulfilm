@@ -3,9 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
 const Worksswiper = () => {
-    const swiperinfo = swiperDBlink.portfolio;
+    const swiperinfo = swiperDBlink.mainswiper;
       return(
-        <Swiper className='workSection'
+        <div>
+          <h2>나는멍청이</h2>
+          <Swiper className='workSection'
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
         slidesPerView={1.5}
@@ -30,7 +32,11 @@ const Worksswiper = () => {
               }
             )
           }
-        </Swiper>
+
+          
+          </Swiper>
+        </div>
+          
       )
   }
   
