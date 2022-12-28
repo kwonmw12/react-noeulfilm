@@ -3,36 +3,49 @@
     [
       {
         "worktitle" : "",
-        "worktime" : "4주",
-        "co" : "단독작업",
-        "app" :  ["illust","photoshop","v-code"],
-        "cls" : "react",
-        "bg" : "url(/myimg/wedding/wedding.jpg)"
+        "cls" : "mainswiper_pt",
+        "bg" : "url(/myimg/wedding/wedding_06.jpg)"
     
       },
       {
         "worktitle" : "",
-        "worktime" : "1주",
-        "co" : "단독작업",
-        "app" :  ["illust","photoshop","v-code"],
-        "cls" : "boot",
-        "bg" : "url(/myimg/wedding/wedding_06.jpg)"
+        "cls" : "mainswiper_pt",
+        "bg" : "url(/myimg/wedding/wedding.jpg)"
       },
       {
         "worktitle" : "",
-        "worktime" : "4주",
-        "co" : "단독작업",
-        "app" :  ["illust","photoshop","v-code"],
-        "cls" : "sir",
+        "cls" : "mainswiper_pt",
         "bg" : "url(/myimg/wedding/wedding_10.jpg)"
       },
       {
         "worktitle" : "",
-        "worktime" : "4주",
-        "co" : "단독작업",
-        "app" : ["illust","photoshop","v-code"],
-        "cls" : "sir",
+        "cls" : "mainswiper_pt",
+        "bg" : "url(/myimg/wedding/wedding_05.jpg)"
+      }],
+  "subswiper" : 
+    [
+      {
+        "worktitle" : "",
+        "cls" : "mainswiper_pt",
+        "bg" : "url(/myimg/wedding/wedding_06.jpg)"
+      
+      },
+      {
+        "worktitle" : "",
+        "cls" : "mainswiper_pt",
+        "bg" : "url(/myimg/wedding/wedding.jpg)"
+      },
+      {
+        "worktitle" : "",
+        "cls" : "mainswiper_pt",
+        "bg" : "url(/myimg/wedding/wedding_10.jpg)"
+      },
+      {
+        "worktitle" : "",
+        "cls" : "mainswiper_pt",
         "bg" : "url(/myimg/wedding/wedding_05.jpg)"
       }]
+
+
 }
 
