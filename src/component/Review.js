@@ -1,12 +1,13 @@
-import interviewDBlink from '../json/preinterview.json';
-const Preinterview = (props) => {
+import interviewDBlink from '../json/review.json';
+const Review = (props) => {
     
     const interviewjson = interviewDBlink[props.objnm];   
    
     return(
       
-      <section className="section py-5 text-center" id={props.contentid}>
-          <h3>{props.title}</h3>
+      <section data-aos="zoom-in" className="section py-5 text-center" id={props.contentid}>
+          <h3 data-aos="fade-right"> {props.title} </h3>
+          <p data-aos="fade-left">노을필름을 이용하신 고객님들의 소리</p>
           <div className="py-5 container-md text-start">
             <ul>
                {
@@ -27,4 +28,4 @@ const Preinterview = (props) => {
     )
   }
 
-  export default Preinterview;
+  export default Review;

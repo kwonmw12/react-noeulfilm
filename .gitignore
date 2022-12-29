@@ -27,3 +27,6 @@ yarn-error.log*
 *.psd
 *.ai
 *.pdf
+*.png
+*.jpg
+*.svg

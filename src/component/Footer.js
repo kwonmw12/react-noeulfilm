@@ -12,9 +12,9 @@ const Footer = () =>{
         </ul>
         
         <ul className="d-flex justify-content-center">
-          <li><a href="">git</a></li>
-          <li><a href="">instar</a></li>
-          <li><a href="">notion</a></li>
+          <li className="px-5 "><a href=""><img src="/img/insta.png" alt="insta" /></a></li>
+          <li className="px-5"><a href=""><img src="/img/kakao.png" alt="kakao" /></a></li>
+          
         </ul>
       </footer>
     )

@@ -1,16 +1,29 @@
 import swiperDBlink from '../json/swiperinof.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid, EffectCoverflow } from 'swiper';
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const Worksswiper = (props) => {
-    const swiperinfo = swiperDBlink[props.contentid];
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+})
+    const swiperinfo = swiperDBlink[props.objnm];
       return(
-        <section className="section text-center" id={props.contentid}>
-          <h3 className='swiper_h3'>{props.title}</h3>
-          <p className='swiper_p'>{props.subtitle}</p>
+        <section data-aos="zoom-in" className="section text-center" id={props.contentid}>
+          <h3 data-aos="fade-right" className='swiper_h3'>{props.title}</h3>
+          <p data-aos="fade-left" className='swiper_p'>{props.subtitle}</p>
           <Swiper className='workSection'
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid]}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, Grid, EffectCoverflow]}
           breakpoints={{
             768:{
               slidesPerView:1             
@@ -19,15 +32,14 @@ const Worksswiper = (props) => {
               slidesPerView:props.view
               }
           }}
-          grid={{rows:props.rows}}
-          spaceBetween={0}
+          grid={props.gridrow}
+          spaceBetween={props.between}
           centeredSlides={true}
           
-          autoplay={{
-          delay:props.delay,
-          disableOnInteraction: false,
-          }}
-          loop = {true} 
+          effect={props.cover}
+          coverflowEffect={props.effect}
+          autoplay={props.delay}
+          loop = {true}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           onSlideChange={() => {
